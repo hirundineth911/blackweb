@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Black_Perl_Gaming</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body, html {
       margin: 0;
       padding: 0;
@@ -17,14 +13,14 @@
       overflow: hidden;
     }
 
-    #myVideo {
+    video {
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
+      bottom: auto;
+      min-width: auto; 
+      min-height: auto;
+      object-fit: fill;
     }
 
     .content {
@@ -66,25 +62,36 @@
     }
 
     figure img {
-      border: 2px solid white;
-      border-radius: 10px;
+      border: 2.5px solid #AE262E;
+      border-radius: 16px;
       width: 160px;
       height: 230px;
+      transition: transform 0.3s ease, filter 0.3s ease;
     }
 
     figcaption {
-      color: white;
+      color: whitesmoke;
       margin-top: 10px;
     }
 
-    figure a {
+    figure {
       color: white;
-      text-decoration: none;
+      text-decoration: inherit;
+      transition: transform 3s ease, filter 3s ease, box-shadow 3s ease;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      border-bottom-left-radius: 1pc;
     }
 
     figure a:hover {
       text-decoration: underline;
+      transform: scale(10); /* Scales the image up by 20% */
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Adds a shadow for the pop effect */
+      z-index: 20; /* Ensures the image is on top of others */
+      filter: brightness(110%);
     }
+
   </style>
 </head>
 
@@ -92,90 +99,113 @@
 
   <!-- Background Video -->
   <video autoplay muted loop playsinline id="myVideo">
-    <source src="../../../../../yt-dlp-downloads/background.webm" type="video/mp4">
+    <source src="C:\Users\gavesh\Desktop\ssssss\blackweb-main\0804.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
- 
   <div class="content">
     <h1>Welcome To Black Pearl Gaming!</h1>
     <hr color="white">
 
-    <a href="file:///C:/Users/gavesh/Desktop/A%20project/about%20us.html">About us</a>
-    <a href="C:/Users/gavesh/Desktop/A project/adventure catogory.html">Adventure games</a>
-    <a href="file:///C:/Users/gavesh/Desktop/A%20project/about%20us.html">Horror games</a>
+    <a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\about us.html" target="_blank" rel="noopener noreferrer">About us</a>
+    <a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\adventure catogory.html" target="_blank" rel="noopener noreferrer">Adventure games</a>
+    <a href="horror-games.html" target="_blank" rel="noopener noreferrer">Horror games</a>
+    <a href="file:///C:/Users/gavesh/Desktop/ssssss/blackweb-main/contact%20us.html" target="_blank" rel="noopener noreferrer">Contact  us</a>
 
-   
     <div class="game-gallery">
       <figure>
-        <a href="https://gofile.io/d/RQzsYJ" target="_blank">
-          <img src="https://m.media-amazon.com/images/M/MV5BMTY1NjUzODk4Nl5BMl5BanBnXkFtZTgwNDYwOTU1MDE@._V1_.jpg" 
-               alt="Assassin's Creed 1" 
-               title="Assassin's Creed 1">
+        <a href="https://gofile.io/d/RQzsYJ" target="_blank" rel="noopener noreferrer">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTY1NjUzODk4Nl5BMl5BanBnXkFtZTgwNDYwOTU1MDE@._V1_.jpg" alt="Assassin's Creed 1 Cover" title="Assassin's Creed 1">
           <figcaption>Assassin's Creed 1</figcaption>
         </a>
       </figure>
 
       <figure>
-        <a href="https://gofile.io/d/LQjk96" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/en/7/77/Assassins_Creed_2_Box_Art.JPG" 
-               alt="Assassin's Creed 2" 
-               title="Assassin's Creed 2">
+        <a href="https://gofile.io/d/LQjk96" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/77/Assassins_Creed_2_Box_Art.JPG" alt="Assassin's Creed 2 Cover" title="Assassin's Creed 2">
           <figcaption>Assassin's Creed 2</figcaption>
         </a>
       </figure>
 
       <figure>
-        <a href="https://gofile.io/d/ycnrZo" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Assassins_Creed_brotherhood_cover.jpg" 
-               alt="Assassin's Creed Brotherhood" 
-               title="Assassin's Creed Brotherhood">
+        <a href="https://gofile.io/d/ycnrZo" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Assassins_Creed_brotherhood_cover.jpg" alt="Assassin's Creed Brotherhood Cover" title="Assassin's Creed Brotherhood">
           <figcaption>Assassin's Creed Brotherhood</figcaption>
         </a>
       </figure>
 
       <figure>
-        <a href="https://gofile.io/d/ycnrZo" target="_blank">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErsuZVWAhSJGOlyCHjTf6OVQJBme0qXi0FA&s" 
-               alt="Assassin's Creed 3" 
-               title="Assassin's Creed 3">
+        <a href="https://gofile.io/d/ycnrZo" target="_blank" rel="noopener noreferrer">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErsuZVWAhSJGOlyCHjTf6OVQJBme0qXi0FA&s" alt="Assassin's Creed 3 Cover" title="Assassin's Creed 3">
           <figcaption>Assassin's Creed 3</figcaption>
         </a>
       </figure>
-		
-		<figure> 
-		
-		<a href="https://gofile.io/d/wiIT9p">
-			
-			<img src="https://wallpapers.com/images/featured/assassins-creed-revelations-z981he8nnrtckyhl.jpg"
-				 alt="Assassin's Creed revalations"
-				 title="Assassin's Creed revalations">
-			<figcaption>Assassin's Creed revalations</figcaption>
-			
-			
-			</a>
-		   
-		
-		</figure>
-		
-		<br>
-		
-			<figure> 
-		
-		<a href="https://gofile.io/d/wiIT9p">
-			
-			<img src="https://wallpapers.com/images/featured/assassins-creed-revelations-z981he8nnrtckyhl.jpg"
-				 alt="Assassin's Creed revalations"
-				 title="Assassin's Creed revalations">
-			<figcaption>Assassin's Creed revalations</figcaption>
-			
-			
-			</a>
-		   
-		
-		</figure>
-		
-		
+
+      <figure>
+        <a href="https://gofile.io/d/wiIT9p" target="_blank" rel="noopener noreferrer">
+          <img src="https://static.wikia.nocookie.net/assassinscreed/images/5/51/ACR_Boxart.jpg/revision/latest/thumbnail/width/360/height/360?cb=20110703195808" alt="Assassin's Creed Revelations Cover" title="Assassin's Creed Revelations">
+          <figcaption>Assassin's Creed Revelations</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/kwukxk" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Assassin%27s_Creed_IV_-_Black_Flag_cover.jpg" alt="Assassin's Creed Black Flag Cover" title="Assassin's Creed Black Flag">
+          <figcaption>Assassin's Creed Black Flag (4)</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/78ooEM" target="_blank" rel="noopener noreferrer">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0DW2azo_WfzOxngiiAkkYNa7zrBen_6Sfvw&s" alt="Spider Man Remastered Cover" title="Marvel's Spiderman Remastered">
+          <figcaption>Spider Man Remastered 1</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/aPavwN" target="_blank" rel="noopener noreferrer">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWL2mlkaimmWp_LFD-gFaPQJnrQ-c6rUHbbg&s" alt="Spider Man 2 Remastered Cover" title="Spider Man 2 Remastered">
+          <figcaption>Spider Man 2 Remastered</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/K7K0RK" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/54/Forza_horizon_3_cover_art.jpg" alt="Forza Horizon 3 Cover" title="Forza Horizon 3">
+          <figcaption>Forza Horizon 3</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/8t4xM0" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/87/Forza_Horizon_4_cover.jpg" alt="Forza Horizon 4 Cover" title="Forza Horizon 4">
+          <figcaption>Forza Horizon 4</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/b3wK0v" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Forza_Horizon_5_cover_art.jpg" alt="Forza Horizon 5 Cover" title="Forza Horizon 5">
+          <figcaption>Forza Horizon 5</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/K7K0RK" target="_blank" rel="noopener noreferrer">
+          <img src="https://xboxwire.thesourcemediaassets.com/sites/2/Forza-Horizon-3-Hot-Wheels-Expansion-Small-Thumbnail-small.jpg" alt="Forza Horizon 3 Hot Wheels Cover" title="Forza Horizon 3 Hot Wheels">
+          <figcaption>Forza Horizon 3 Hot Wheels</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+        <a href="https://gofile.io/d/1YuOeA" target="_blank" rel="noopener noreferrer">
+          <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1J5ePRAHtvawSfy5t8sgA2/28c2ba92886f63c0ca3a278b8cacd70d/ac-syndicate.jpg"
+               alt="Assasinse creed syndicate"
+               title="Assasinse creed syndicate">
+          <figcaption>Assasinse creed syndicate</figcaption>
+        </a>
+      </figure>
+      
     </div>
   </div>
 </body>
