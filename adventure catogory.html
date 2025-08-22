@@ -12,6 +12,7 @@
       color: white;
       text-align: center;
     }
+    
     video {  
       position: fixed;
       top: 0;
@@ -21,57 +22,85 @@
       object-fit:fill;
       z-index: -1;
     }
+    
     .gallery {  /*div class*/
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }  figure:hover {
-    transform: scale(1.20) translateY(-5px);
-    box-shadow:10 20px 20px  rgba(0.0.0.0.3);
-	 }
-    figure {
-     
-      padding: 10px;
-      border-radius: 10px;
+      /*game grid*/
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1px;
+      padding: 8px;
+      width:94% ;
+      margin: 0 auto;  /* centers the gallery */
+      margin-bottom: 1px;  
     }
-    img { border: 2.5px solid #AE262E;
+    .gallery1 {  /*div class*/
+      display: grid;
+      /*game grid*/
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 1px;
+      width: 70%;
+      margin: 0 auto;  /* centers the gallery */
+      margin-top: 1px;   
+    }
+   figure {
+      /* Add smooth transition to figures */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 2px;
+      border-radius: 8px;
+    }
+     
+    figure:hover {
+      transform: scale(1.10) translateY(0px);
+      box-shadow:10 20px 20px  rgba(0.0.0.0.3);
+	 }
+  
+    img { 
+      border: 2.5px solid #AE262E;
       border-radius: 16px;
-      width: 160px;
+      width: 170px;
       height: 230px;
+       /* Add smooth transitions */
       transition: transform 0.3s ease, filter 0.3s ease;
       border-radius: 8px;
     }
+  
     figcaption {
-      margin-top: 8px;
+      margin: 10px 5px;
+      padding: 2px 10px;
       font-size: 16px;
-      font-weight: bold;
+      font-weight: 600;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      text-align: center;
+      line-height: 1.2;
+      color: white;
+      letter-spacing: 0.3px;
     }
     a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 15px;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 18px;
-    }
-    a:hover {
-   font-size:25px;
-		color:black;
-		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-     
-		
-    }
-    .content {
-      position: relative;
-      z-index: 1;
-      color: #fff;
-      text-align: center;
-      padding: 30px;
-      background-color: rgba(61, 103, 146, 0.24);
-    }
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     margin:  12px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;
+     /* Add smooth transitions */
+     transition: font-size 0.3s ease, color 0.3s ease;
+   }
 
+   a:hover {
+     font-size: 22px;
+     color: black;
+     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+   }
 
+   .content {
+     position: relative;
+     /*page layers*/
+     color: #fff;
+     text-align: center;
+     padding: 30px;
+     background-color: rgba(61, 103, 146, 0.24);
+  }
+ 
   </style>
 </head>
 <body> 
@@ -85,6 +114,7 @@
   <h1>Adventure Games</h1>
   <div class="content">
    
+    <a href="black_pearl_video_background.html">Home</a>
 		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\about us.html" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">About us</a>	
 		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\adventure catogory.html"style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Adventure</a>
 		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\music.html"style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Music Blends</a>
@@ -93,9 +123,8 @@
 	</div>
 
   <div class="gallery">
-
-   
-      <figure>
+      
+    <figure>
         <a href="https://gofile.io/d/LQjk96" target="_blank" rel="noopener noreferrer">
           <img src="https://upload.wikimedia.org/wikipedia/en/7/77/Assassins_Creed_2_Box_Art.JPG" alt="Assassin's Creed 2 Cover" title="Assassin's Creed 2">
 
@@ -113,7 +142,7 @@
     <figure>
       <a href="https://gofile.io/d/s1OcFl" target="_blank">
         <img src=https://upload.wikimedia.org/wikipedia/en/3/31/The_Walking_Dead%2C_Season_One_cover.jpeg alt="The Walking Dead: A New Frontier" title="The Walking Dead: A New Frontier">
-        <figcaption>The Walking Dead: A New Frontier</figcaption>
+        <figcaption>The Walking Dead:A New Frontier</figcaption>
       </a>
     </figure>
 
@@ -137,8 +166,10 @@
         <figcaption>Scum</figcaption>
       </a>
     </figure>
+  </div>
 
-
+  <div class="gallery1">
+    
     <figure>
       <a href="https://gofile.io/d/TmBt8K" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRry9G8MA_iYTaHjn8U4ehfBiq0plBdbvxITA&s" alt="PEAK" title="PEAK">
@@ -166,10 +197,11 @@
         <figcaption>The Last of Us</figcaption>
       </a>
     </figure>
+   </div>
 
-
-  </div>
+  
+  <br>
+  <br>
 
 </body>
 </html>
-
