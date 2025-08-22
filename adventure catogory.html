@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Gallery</title>
-  <style>
+  <style> 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
       color: white;
       text-align: center;
     }
-    video {
+    video {  
       position: fixed;
       top: 0;
       left: 0;
@@ -21,13 +21,13 @@
       object-fit:fill;
       z-index: -1;
     }
-    .gallery {
+    .gallery {  /*div class*/
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       padding: 20px;
     }  figure:hover {
-    transform: scale(1.005) translateY(-5px);
+    transform: scale(1.20) translateY(-5px);
     box-shadow:10 20px 20px  rgba(0.0.0.0.3);
 	 }
     figure {
@@ -50,20 +50,47 @@
     a {
       color: white;
       text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
     }
     a:hover {
-      text-decoration: underline;
+   font-size:25px;
+		color:black;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+     
+		
     }
+    .content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(61, 103, 146, 0.24);
+    }
+
+
   </style>
 </head>
-<body>
+<body> 
 
+  
  <video autoplay muted loop playsinline id="myVideo">
     <source src="C:\Users\gavesh\Desktop\ssssss\blackweb-main\0819 (1).mp4"     type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
   <h1>Adventure Games</h1>
+  <div class="content">
+   
+		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\about us.html" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">About us</a>	
+		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\adventure catogory.html"style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> adventure</a>
+		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\music.html"style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Music Blends</a>
+		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\contact us.html"style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Contact us</a>
+		<a href="C:\Users\gavesh\Desktop\ssssss\blackweb-main\Game Request Form.html"style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Request Games</a> <input type="text" class="search-box" placeholder="Search here...">
+	</div>
 
   <div class="gallery">
 
@@ -111,6 +138,7 @@
       </a>
     </figure>
 
+
     <figure>
       <a href="https://gofile.io/d/TmBt8K" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRry9G8MA_iYTaHjn8U4ehfBiq0plBdbvxITA&s" alt="PEAK" title="PEAK">
@@ -138,6 +166,7 @@
         <figcaption>The Last of Us</figcaption>
       </a>
     </figure>
+
 
   </div>
 
