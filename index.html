@@ -4,71 +4,75 @@
     <meta charset="UTF-8">
     <title>Contact Us</title>
     <style>
+        /* ---------- Home Link Styling ---------- */
+        .home {
+            color: black;          /* Text color */
+            font-size: 40px;       /* Large font size */
+        }
 		
-		
-		.home{
-			
-			
-			color:black;			
-			font-size: 40px
-		}
-		
+        /* ---------- General Page Styling ---------- */
         body {
-            background-color: aliceblue;
-            color: #333333;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            overflow-x: hidden;
+            background-color: aliceblue;    /* Light background (covered by video) */
+            color: #333333;                 /* Default text color */
+            font-family: Arial, sans-serif; /* Font style */
+            margin: 0;                      /* Remove browser default margin */
+            padding: 0;                     /* Remove browser default padding */
+            position: relative;             /* Position context for elements */
+            overflow-x: hidden;             /* Prevent horizontal scrolling */
         }
 
+        /* ---------- Background Video Styling ---------- */
         #myVideo {
-            position: fixed;
+            position: fixed;   /* Stay fixed in the background */
             top: 0; left: 0;
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            z-index: -1;
-            filter: brightness(40%);
+            width: 100vw;      /* Fill full viewport width */
+            height: 100vh;     /* Fill full viewport height */
+            object-fit: cover; /* Scale video proportionally and crop */
+            z-index: -1;       /* Send behind all content */
+            filter: brightness(40%); /* Darken video for readability */
         }
 
+        /* ---------- Contact Section Container ---------- */
         .contact-container {
-            background-color: rgba(57, 50, 50, 0.85); /* slightly transparent for blending */
-            max-width: 600px;
-            margin: 80px auto;
-            padding: 40px 30px;
-            text-align: center;
-            border-radius: 8px;
-            color: lightcyan;
+            background-color: rgba(57, 50, 50, 0.85); /* Semi-transparent dark background */
+            max-width: 600px;    /* Restrict max width */
+            margin: 80px auto;   /* Center horizontally, add top margin */
+            padding: 40px 30px;  /* Inner spacing */
+            text-align: center;  /* Center all text */
+            border-radius: 8px;  /* Rounded corners */
+            color: lightcyan;    /* Light text color for contrast */
         }
 
+        /* ---------- Main Heading ---------- */
         h1 {
-            margin-bottom: 8px;
-            font-size: 4em;
+            margin-bottom: 8px; /* Space below heading */
+            font-size: 4em;     /* Large heading size */
         }
 
+        /* ---------- Contact Methods Layout ---------- */
         .contact-methods {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 5px;
+            display: flex;          /* Flexbox layout (side by side) */
+            justify-content: center;/* Center items horizontally */
+            gap: 40px;              /* Space between each item */
+            margin-top: 5px;        /* Space above */
         }
 
+        /* ---------- Contact Method Headings ---------- */
         .contact-method h2 {
-            font-size: 1.15em;
+            font-size: 1.15em; /* Slightly larger than normal text */
         }
 
+        /* ---------- Links Styling ---------- */
         a {
-            color: deepskyblue;
-            text-decoration: none;
-            font-weight: 500;
+            color: deepskyblue;     /* Blue link color */
+            text-decoration: none;  /* Remove underline */
+            font-weight: 500;       /* Semi-bold text */
         }
 
         a:hover {
-            text-decoration: underline;
-        }
-    </style>
+            text-decoration: underline; /* Add underline on hover for interactivity */
+        }
+    </style>
 </head>
 <body>
 
@@ -107,3 +111,4 @@
 
 </body>
 </html>
+
